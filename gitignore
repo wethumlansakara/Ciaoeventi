@@ -1,0 +1,74 @@
+# ===================================
+# Ciaoeventi - .gitignore
+# ===================================
+
+# --- User Uploads (don't commit user-generated files) ---
+test2/uploads/*
+!test2/uploads/.gitkeep
+
+# --- Local Config / Secrets ---
+test2/config/database.local.php
+.env
+.env.local
+*.local
+
+# --- PHP / Composer ---
+/vendor/
+composer.phar
+composer.lock
+
+# --- Logs ---
+*.log
+error_log
+debug.log
+logs/
+
+# --- Cache & Temp ---
+*.cache
+*.tmp
+*.temp
+.cache/
+tmp/
+
+# --- IDE & Editor ---
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+.project
+.buildpath
+.settings/
+
+# --- OS Generated ---
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# --- Database Backups (keep schema, ignore dumps) ---
+*.sql.gz
+*.sql.zip
+backup_*.sql
+dump_*.sql
+
+# --- Sensitive / Build Artifacts ---
+*.bak
+*.backup
+*.old
+*.orig
+node_modules/
+dist/
+build/
+
+# --- Reports (project-specific, review before tracking) ---
+# reports/
+
+# --- Misc ---
+.htpasswd
